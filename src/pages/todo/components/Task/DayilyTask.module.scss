@@ -1,0 +1,43 @@
+.dayilyTask {
+  &__title {
+    max-width: 235px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: block;
+    white-space: nowrap;
+    &_completed {
+      text-decoration-line: line-through;
+    }
+  }
+
+  &__description {
+    color: rgba(255, 255, 255, 0.6);
+    max-width: 176px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: block;
+    white-space: nowrap;
+  }
+
+  &__level {
+    border: none;
+    margin-block: 4%;
+    width: 5px;
+    display: block;
+    max-width: 5px;
+    padding: 0;
+    border-radius: 3px;
+
+    &_extra{
+      background-color: var(--status-hight);
+    }
+
+    &_hard  {
+      background-color: var(--status-medium);
+    }
+
+    &_light{
+      background-color: var(--status-low);
+    }
+  }
+}
